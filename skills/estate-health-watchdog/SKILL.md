@@ -50,7 +50,7 @@ hermes skills install github:vigilio-desto/estate-skills/skills/estate-health-wa
 
 ## Configuration
 
-Set these environment variables in your Hermes profile (`~/.hermes/config.yaml` or `.env`):
+Set these environment variables in your Hermes profile configuration (environment section of `config.yaml` or your `.env` file):
 
 | Variable | Default | Purpose |
 |----------|---------|---------|
@@ -68,11 +68,11 @@ Set these environment variables in your Hermes profile (`~/.hermes/config.yaml` 
 ### Profile-Specific Override Example
 
 ```yaml
-# ~/.hermes/config.yaml
+# config.yaml (environment section)
 env:
   ESTATE_API_URL: https://api.my-estate.com
   ESTATE_FRONTEND_URL: https://my-estate.com
-  ESSAYS_DIR: /home/user/content/essays
+  ESSAYS_DIR: /var/data/content/essays
   HOMEPAGE_MARKER_1: "my-estate-header-tag"
   CONTENT_CARD_PATTERN: "class=\"essay-card\""
 ```
